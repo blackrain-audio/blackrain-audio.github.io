@@ -1,0 +1,12 @@
+# Site settings
+title: blackrain-audio
+#email: blackrain-audio a7 blah d0t ml
+description: > # this means to ignore newlines until "baseurl:"
+  front page for my code repositories at github
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "https://blackrain-audio.github.io" # the base hostname & protocol for your site
+#twitter_username: nonono
+github_username:  blackrain-audio
+
+# Build settings
+markdown: kramdown
