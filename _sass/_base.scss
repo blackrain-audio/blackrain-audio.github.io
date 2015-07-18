@@ -8,6 +8,16 @@ dl, dd, ol, ul, figure {
     padding: 0;
 }
 
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family: $heading-font-family;
+  font-weight: normal;
+  color: #333;
+}
 
 
 /**
@@ -21,6 +31,12 @@ body {
     color: $text-color;
     background-color: $background-color;
     -webkit-text-size-adjust: 100%;
+
+//    background-image: url("/assets/andre_k-moon-01.png");
+//    background-position: left top;
+//    background-repeat: no-repeat;
+
+    margin-top: 0px;
 }
 
 
@@ -83,6 +99,8 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 300;
 }
 
+
+
 /**
  * Links
  */
@@ -95,8 +113,8 @@ a {
     }
 
     &:hover {
-        color: $text-color;
-    //    text-decoration: underline;
+        color: $brand-color;
+        text-decoration: underline;
     }
 }
 

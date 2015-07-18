@@ -3,25 +3,29 @@
  */
 .site-header {
     border-top: 5px solid $grey-color-dark;
-    border-bottom: 1px solid $grey-color-light;
+    border-bottom: 1px solid #bebebe;
     min-height: 56px;
-
-    //background-color: #dfdfdf;
 
     // Positioning context for the mobile navigation icon
     position: relative;
 }
 
 .site-title {
-    font-size: 32px;
+    font-family: $heading-font-family;
+    font-size: $site-title-font-size;
     line-height: 56px;
-    letter-spacing: 0px;
+    letter-spacing: -1px;
     margin-bottom: 0;
     float: left;
+    color: $title-color;
 
     &,
     &:visited {
-        color: $grey-color-dark;
+        color: $title-color;
+    }
+    &:hover {
+        color: $title-color;
+        text-decoration: none;
     }
 }
 
@@ -34,7 +38,7 @@
     }
 
     .page-link {
-        color: $text-color;
+        color: $title-color;
         line-height: $base-line-height;
 
         // Gaps between nav items, but not on the first one
@@ -94,7 +98,8 @@
  * Site footer
  */
 .site-footer {
-    border-top: 1px solid $grey-color-light;
+    background-color: $grey-color-light2;
+    border-top: 1px solid #999; //$grey-color-light;
     padding: $spacing-unit 0;
 }
 
@@ -168,7 +173,7 @@
 }
 
 .page-heading {
-    font-size: 28px;
+    font-size: $page-heading-font-size;
 }
 
 .post-list {
@@ -178,21 +183,17 @@
     > li {
         margin-bottom: $spacing-unit;
     }
-
-    hr {
-       color:#fefefe;
-    }
 }
 
 .post-meta {
-    font-size: $small-font-size;
     color: $grey-color;
 }
 
 .post-link {
     display: block;
-    font-size: 24px;
+    font-size: $post-link-font-size;
 }
+
 
 
 /**
@@ -203,12 +204,12 @@
 }
 
 .post-title {
-    font-size: 28px;
+    font-size: $post-title-size;
     letter-spacing: -1px;
     line-height: 1;
 
     @include media-query($on-laptop) {
-        font-size: 32px;
+        font-size: 36px;
     }
 }
 
@@ -216,7 +217,7 @@
     margin-bottom: $spacing-unit;
 
     h2 {
-        font-size: 28px;
+        font-size: $post-content-h2;
 
         @include media-query($on-laptop) {
             font-size: 28px;
@@ -224,7 +225,7 @@
     }
 
     h3 {
-        font-size: 22px;
+        font-size: $post-content-h3;
 
         @include media-query($on-laptop) {
             font-size: 22px;
@@ -232,11 +233,10 @@
     }
 
     h4 {
-        font-size: 20px;
+        font-size: $post-content-h4;
 
         @include media-query($on-laptop) {
             font-size: 18px;
         }
     }
-
 }
